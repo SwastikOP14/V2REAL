@@ -1,0 +1,191 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #649ea1;
+}
+
+header {
+    background: linear-gradient(600deg, #FFE3E3, #BFECFF);
+    max-height: 100px;
+    box-shadow: 0 5px 9px rgba(36,54,66, 0.7);
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Aligns it to the top of the viewport */
+    left: 0; /* Aligns it to the left of the viewport */
+    width: 100%; /* Ensures the navbar spans the full width of the page */
+    z-index: 1000; /* Keeps the navbar on top of other content */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    max-height: 15px; /* Reduced horizontal padding */
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 1rem; /* Space between logo and text */
+    width: auto; /* Set the width to 20% of the viewport width */
+    height: 6vw; /* Keep the aspect ratio intact */
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.2rem;
+}
+
+.raleway-main-title {
+    font-family: "Raleway", sans-serif; /* Apply the Raleway font */
+    font-optical-sizing: auto;         /* Automatically adjusts for better legibility */
+    font-weight: 1000;                  /* Bold weight */
+    font-style: normal;                /* Normal style (not italic) */
+    font-size: 120%;                   /* Adjust size as needed */
+    color: #333;                       /* Optional: Set text color */
+} 
+
+.funnel-sans-{
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+header nav ul li a {
+    color: #ae005a;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #000000; /* Slightly lighter color */
+    transition: all 0.3s ease;
+}
+
+.hero {
+    background-image: 
+        linear-gradient(to bottom, rgba(16, 52, 99, 0.299), #06405b80), /* Gradient overlay */
+        url('print3d.jpg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Full-screen height */
+    display: flex; /* For alignment */
+    flex-direction: column; /* Stack text elements */
+    justify-content: center; /* Center text vertically */
+    align-items: center; /* Center text horizontally */
+    text-align: center; /* Align text */
+    padding: 2rem; /* Optional padding */
+    color: white; /* Text color */
+}
+
+.hero h2 {
+    font-family: 'Funnel Sans';
+    font-size: 2.5rem; /* Adjust font size for the main heading */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Adjust font size for the paragraph */
+    margin-bottom: 1.5rem; /* Space below the paragraph */
+}
+
+.hero .cta {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Adjust the button size */
+    background: #f04e31; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Adjust font size for the button text */
+    transition: background-color 0.3s ease; /* Add hover transition */
+}
+
+.hero .cta:hover {
+    background: #c03d29; /* Darken button color on hover */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-item {
+    background: #ddd;
+    padding: 2rem;
+    text-align: center;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #f04e31;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+form .form-group {
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
