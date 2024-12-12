@@ -7,7 +7,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #649ea1;
+    color: #13565a;
+    background: linear-gradient(60deg, #2E3192, #1BFFFF); /* Gradient with two colors */
+    color: #fff; /* Ensure text is readable on the gradient */
+    border-radius: 8px; 
 }
 
 header {
@@ -71,7 +74,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #ae005a;
+    color: #ff0000e2;
     font-family: 'Raleway';
     text-decoration: none;
 }
@@ -83,7 +86,7 @@ header nav ul li a:hover {
 
 .hero {
     background-image: 
-        linear-gradient(to bottom, rgba(16, 52, 99, 0.299), #06405b80), /* Gradient overlay */
+        linear-gradient(to bottom, rgba(16, 52, 99, 0.356), #06405b80), /* Gradient overlay */
         url('print3d.jpg'); /* Background image */
     background-size: cover; /* Ensures the image covers the section */
     background-position: center; /* Centers the image */
@@ -101,14 +104,25 @@ header nav ul li a:hover {
     font-family: 'Funnel Sans';
     font-size: 2.5rem; /* Adjust font size for the main heading */
     margin-bottom: 1rem; /* Space below the heading */
+    font-weight: 600; /* Regular weight */
+    color: #ffffff; /* Ensure readability on the background */
+    text-align: center; /* Center the text horizontally */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 40); /* Add a subtle shadow */
 }
 
 .hero p {
-    font-size: 1.2rem; /* Adjust font size for the paragraph */
     margin-bottom: 1.5rem; /* Space below the paragraph */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: 550; /* Regular weight */
+    color: #ffffff; /* Ensure readability on the background */
+    text-align: center; /* Center the text horizontally */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 40); /* Add a subtle shadow */
+    margin-top: 0.5rem; /* Adjust spacing above */
 }
 
 .hero .cta {
+    font-family:'Raleway' ;
+    font-weight: 800;
     display: inline-block;
     padding: 0.5rem 1rem; /* Adjust the button size */
     background: #f04e31; /* Button background color */
@@ -123,23 +137,46 @@ header nav ul li a:hover {
     background: #c03d29; /* Darken button color on hover */
 }
 
-.container {
+.container { 
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
+#services {
+    text-align: center; /* Center all text inside */
+}
+
+#services h2 { 
+    font-weight: bold; /* Bold heading for emphasis */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    color: #333; /* Set text color */
+    display: flexbox;
+    padding: 0.5rem 1rem; /* Adjust the button size */
+    background: linear-gradient(45deg, #614385, #516395);
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 2rem; /* Adjust font size for the button text */
+    transition: background-color 0.3s ease; /* Add hover transition */
+}
+
 .service-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 2rem; /* Spacing between cards */
+    flex-wrap: wrap; /* Allow cards to wrap if needed */
 }
 
 .card {
-    background: #f4f4f4;
+    background: #dbcdcdb7;
     padding: 1.5rem;
     border-radius: 5px;
     text-align: center;
+    height: 240px;
+    width: auto;
+    padding: 0px 50px;
+    border-radius: 9px;
 }
 
 .card h3 {
@@ -153,9 +190,10 @@ header nav ul li a:hover {
 }
 
 .gallery-item {
-    background: #ddd;
+    background: #432E54;
     padding: 2rem;
     text-align: center;
+    border-radius: 10px;
 }
 
 .cta {
